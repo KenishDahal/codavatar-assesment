@@ -1,15 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-
-
-package.json
-/package-lock.json
-/postcss.config.mjs
-/tailwind.config.js
-/jsconfig.json
-/next.config.mjs
-
-
 # dependencies
 /node_modules
 /.pnp
