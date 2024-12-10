@@ -1,0 +1,18 @@
+
+$white-color: #F9F9F9;
+
+@use "./util/breakpoints" as u;
+
+@import "./globals/_typo";
+
+// components
+@import "./components/card";
+@import "./components/codeCard";
+@import "./components/button";
+@import "./components/drop";
+
+// pages
+@import "./pages/signup";
+@import "./pages/form";
+
+

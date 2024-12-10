@@ -1,0 +1,93 @@
+.form {
+  text-align: center;
+  padding-top: 32px;
+  &__line {
+    position: relative;
+    width: 80%;
+    height: 4px;
+    transform: translate(-50%, -50%); /* Offset for proper centering */
+    background-color: #ccc;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Evenly space dots */
+    margin-top: 48px;
+    margin-bottom: 108px;
+    .dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      border: 3px solid rgba(215, 218, 220, 1);
+      &--first {
+        background-color: rgba(52, 199, 89, 1);
+        border: 3px solid rgba(52, 199, 89, 1);
+      }
+      &--second {
+        border: 3px solid rgba(52, 199, 89, 1);
+      }
+    }
+    .dotText {
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    .line-between-dots {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 14%; /* Adjust to the distance between the first and second dot */
+      height: 2px;
+      background-color: green; /* Green line between the dots */
+      transform: translateY(-50%);
+    }
+  }
+
+  &__table {
+    padding:  56px 48px;
+    margin: 0 230px;
+    text-align: left;
+    box-shadow: 10px 0px 30px rgb(175, 175, 175);
+
+    &__text{
+        color: rgba(99, 101, 103, 1);
+        font-size: 14px;
+    }
+    &__data {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 40px;
+      .form-group {
+        flex: 0 0 48%; /* Each form group takes 48% of the container's width */
+        box-sizing: border-box;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+        border: 1px solid rgba(215, 218, 220, 1);
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.next{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    .button{
+        width: 90px;
+        padding-block: 14px;
+    }
+}
