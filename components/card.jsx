@@ -11,11 +11,5 @@ const Card = ({ name,office, text, imgSrc }) => {
   );
 };
 
-// Prop types validation
-Card.propTypes = {
-  heading: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  imgSrc: PropTypes.string.isRequired, // Ensure imgSrc is a valid string (URL)
-};
 
 export default Card;
