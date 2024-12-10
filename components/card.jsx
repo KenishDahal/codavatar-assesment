@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 const Card = ({ name,office, text, imgSrc }) => {
   return (
